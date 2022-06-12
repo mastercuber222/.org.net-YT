@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>CKS-Exhibition 22-23</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Aim</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our School</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>CKS-Exhibition<br /> 2022-23</h2>
+                <h3>Survey your kid.Know your kid</h3>
+                <p>
+                    1] Open the Survey app or the survey form using the given button below.<br />
+                    2]Please fill the form and submit it.<br />
+
+                    3]Wait for 10-15 mins to get your marks and response.<br />
+                    Thank You!
+                </p>
+                <h4>The Survey</h4>
+                <button onclick="window.location.href = 'Survey.html';" type="button">Survey<img src="arrow.png" /></button>
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+   
+        <div class="btn-1">
+            <button onclick="window.location.href = 'https://www.chitrakoota.com';">  CKS<img src="arrow.png" ></button>
+        </div>
+        
+    
+    
+</body>
+</html>
